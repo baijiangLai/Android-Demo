@@ -3,12 +3,13 @@ plugins {
 }
 
 android {
+    namespace 'com.lixiang.server'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.lixiang.android_demo"
+        applicationId "com.lixiang.server"
         minSdk 30
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
