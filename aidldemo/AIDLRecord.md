@@ -12,7 +12,7 @@
 3. 什么是AIDL？
    1. 前面我们讲到IPC这个名词，他的全名叫做：跨进程通信(interprocess communication)， 因为在Android系统中,个个应用程序都运行在自己的进程中,进程之间一般是无法直接进行数据交换的, 而为了实现跨进程，Android给我们提供了上面说的Binder机制，而这个机制使用的接口语言就是: AIDL(Android Interface Definition Language)，他的语法很简单，而这种接口语言并非真正的编程语言，只是定义两个进程间的通信接口而已！而生成符合通信协议的Java代码则是由Android SDK的 platform-tools目录下的aidl.exe工具生成，生成对应的接口文件在:gen目录下，一般是:Xxx.java的接口！ 而在该接口中包含一个Stub的内部类，该类中实现了在该类中实现了IBinder接口与自定义的通信接口, 这个类将会作为远程Service的回调类——实现了IBinder接口,所以可作为Service的onBind( )方法的返回值！
 4. AIDL流程：
-   ![img.png](img.png)
+   [binder调用流程](https://github.com/baijiangLai/Android-Demo/blob/master/images/service/Binder.png)
 5. 对于初级开发者而言，最重要的事是知道如何去使用，而不过多深入追究其原理，[Binder原理](http://gityuan.com/archive/)
 
 
