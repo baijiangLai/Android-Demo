@@ -18,3 +18,23 @@ adapter的位置就处于controller的地方
 
 ## Adapter结构图
 ![adapter结构图](https://github.com/baijiangLai/Android-Demo/blob/master/images/adapter/adapter.png)
+
+
+# 总结
+## 直接使用给出的adapter(ArrayAdapter、SimpleAdapter)
+步骤：
+1. 创建xxx.xml文件，在里面设计好布局
+2. 在activity_main.xml文件中直接使用设计好的xxx.xml(布局文件)
+```xml
+    <ListView
+        android:id="@+id/list_test"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:entries="@array/myarray"/>
+```
+3. 代码中将数据与adapter进行关联：
+```java
+        ListView listView = (ListView) findViewById(R.id.list_test);
+        listView.setAdapter(myAdapter);
+```
+4. 创建对应的adapter，同时将数据设置进去
