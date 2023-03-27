@@ -54,3 +54,23 @@
 ```java
 listView.setAdapter(adapter);
 ```
+
+# 模板
+界面上有多少个Item，那么getView方法就会被调用多少次！
+
+inflate()每次都要加载一次xml，其实这个convertView是系统提供给我们的可供服用的View 的缓存对象
+
+getView()会被调用多次，那么findViewById不一样得调用多次，而我们的ListView的Item 一般都是一样的布局，我们可以对这里在优化下，我们可以自己定义一个ViewHolder类来对这一部分 进行性能优化！
+
+1. 需要自定义一个ViewHolder(其成员属性与自定义xml文件中的一致)
+2. 在`getView()`的时候对convertView进行判断
+```java
+ViewHolder holder = null;
+    if(convertView == null){
+        convertView=LayoutInflater.from(mContext).inflate(R.layout.item_list_animal,parent,false);
+        holder=new ViewHolder();
+        ...
+    } else {
+        holder = (ViewHolder) convertView.getTag();
+    }
+```

@@ -45,18 +45,31 @@ public class AnimalAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder holder = null;
         //最后返回的视图
-        convertView = LayoutInflater.from(context).inflate(R.layout.item_list_animal,parent,false);
+        //inflate()每次都要加载一次xml，其实这个convertView是系统提供给我们的可供服用的View的缓存对象
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_list_animal, parent, false);
+            holder = new ViewHolder();
+            holder.img_icon = (ImageView) convertView.findViewById(R.id.img_icon);
+            holder.txt_aName = (TextView) convertView.findViewById(R.id.txt_aName);
+            holder.txt_aSpeak = (TextView) convertView.findViewById(R.id.txt_aSpeak);
+
+        }else {
+            holder = (ViewHolder) convertView.getTag();
+        }
 
         //对应数据
-        ImageView img_icon = (ImageView) convertView.findViewById(R.id.img_icon);
-        TextView txt_aName = (TextView) convertView.findViewById(R.id.txt_aName);
-        TextView txt_aSpeak = (TextView) convertView.findViewById(R.id.txt_aSpeak);
-
-        img_icon.setBackgroundResource(data.get(position).getIcon());
-        txt_aName.setText(data.get(position).getName());
-        txt_aSpeak.setText(data.get(position).getSpeak());
+        holder.img_icon.setBackgroundResource(data.get(position).getIcon());
+        holder.txt_aName.setText(data.get(position).getName());
+        holder.txt_aSpeak.setText(data.get(position).getSpeak());
 
         return convertView;
+    }
+
+    static class ViewHolder{
+        ImageView img_icon;
+        TextView txt_aName;
+        TextView txt_aSpeak;
     }
 }
