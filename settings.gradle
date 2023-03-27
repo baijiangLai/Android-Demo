@@ -14,7 +14,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Android-Demo"
 include ':app'
-include ':aidldemo'
+include ':aidl_demo'
 include ':aidldemo:client'
 include ':aidldemo:server'
 include ':mvp_demo'
+include ':adapter_demo'
