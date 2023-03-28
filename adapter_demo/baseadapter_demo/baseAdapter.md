@@ -74,3 +74,12 @@ ViewHolder holder = null;
         holder = (ViewHolder) convertView.getTag();
     }
 ```
+
+## 出现的bug
+在AnimalAdapter中，向下滑动页面的时候，会出现空指针的异常
+```java
+java.lang.NullPointerException: Attempt to read from field 'android.widget.ImageView com.lixiang.baseadapter_demo.adapter.AnimalAdapter$ViewHolder.img_icon' on a null object reference
+```
+
+经过debug后发现：
+缺少`convertView.setTag(holder);`，[相关链接](https://blog.csdn.net/weixin_30387339/article/details/95266350)

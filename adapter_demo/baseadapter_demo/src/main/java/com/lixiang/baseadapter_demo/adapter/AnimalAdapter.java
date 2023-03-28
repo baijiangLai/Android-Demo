@@ -54,7 +54,7 @@ public class AnimalAdapter extends BaseAdapter {
             holder.img_icon = (ImageView) convertView.findViewById(R.id.img_icon);
             holder.txt_aName = (TextView) convertView.findViewById(R.id.txt_aName);
             holder.txt_aSpeak = (TextView) convertView.findViewById(R.id.txt_aSpeak);
-
+            convertView.setTag(holder);
         }else {
             holder = (ViewHolder) convertView.getTag();
         }

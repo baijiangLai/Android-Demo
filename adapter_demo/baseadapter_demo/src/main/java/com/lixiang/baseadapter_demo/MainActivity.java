@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
         list_animal = (ListView) findViewById(R.id.list_animal);
 
         //动态加载顶部View和底部View
-        final LayoutInflater inflater = LayoutInflater.from(this);
-        View headView = inflater.inflate(R.layout.view_header,null,false);
-        View footView = inflater.inflate(R.layout.view_footer, null, false);
+//        final LayoutInflater inflater = LayoutInflater.from(this);
+//        View headView = inflater.inflate(R.layout.view_header,null,false);
+//        View footView = inflater.inflate(R.layout.view_footer, null, false);
 
 
         mData = new LinkedList<>();
@@ -44,10 +44,34 @@ public class MainActivity extends AppCompatActivity {
         mData.add(new Animal("鸭说", "你是鸭么?", R.mipmap.ic_launcher));
         mData.add(new Animal("鱼说", "你是鱼么?", R.mipmap.ic_launcher));
         mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
+        mData.add(new Animal("马说", "你是马么?", R.mipmap.ic_launcher));
 
         //添加表头和表尾需要写在setAdapter方法调用之前！！！
-        list_animal.addHeaderView(headView);
-        list_animal.addFooterView(footView);
+//        list_animal.addHeaderView(headView);
+//        list_animal.addFooterView(footView);
 
         mAdapter = new AnimalAdapter(mContext, (LinkedList<Animal>) mData);
         list_animal.setAdapter(mAdapter);
