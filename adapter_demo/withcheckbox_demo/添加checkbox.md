@@ -1,0 +1,3 @@
+作为ListView经典问题之一，如果你尝试过自定义ListView的item，在上面带有一个checkbox的话，那么 当你的item数超过了一页的话，就会出错
+
+其实问题就和ListView向下翻页后出现空指针问题一样
