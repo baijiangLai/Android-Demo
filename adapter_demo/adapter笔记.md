@@ -38,3 +38,6 @@ adapter的位置就处于controller的地方
         listView.setAdapter(myAdapter);
 ```
 4. 创建对应的adapter，同时将数据设置进去
+
+# 构建可复用的自定义BaseAdapter
+[链接](https://www.runoob.com/w3cnote/android-tutorial-customer-baseadapter.html)
