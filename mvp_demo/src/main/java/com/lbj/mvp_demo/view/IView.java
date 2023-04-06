@@ -1,4 +1,4 @@
-package com.lbj.mvp_demo;
+package com.lbj.mvp_demo.view;
 
 /**
  * 对应MVP中的View部分

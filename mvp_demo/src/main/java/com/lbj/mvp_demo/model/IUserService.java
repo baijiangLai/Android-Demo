@@ -1,4 +1,4 @@
-package com.lbj.mvp_demo;
+package com.lbj.mvp_demo.model;
 
 /**
  * 对应MVP中的model部分

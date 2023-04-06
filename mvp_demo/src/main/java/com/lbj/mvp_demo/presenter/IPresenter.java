@@ -1,4 +1,4 @@
-package com.lbj.mvp_demo;
+package com.lbj.mvp_demo.presenter;
 
 /**
  * 对应MVP中的Presenter部分

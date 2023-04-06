@@ -1,8 +1,11 @@
-package com.lbj.mvp_demo;
+package com.lbj.mvp_demo.presenter;
 
 import android.text.TextUtils;
 
-public class Presenter implements IPresenter{
+import com.lbj.mvp_demo.view.IView;
+import com.lbj.mvp_demo.model.UserService;
+
+public class Presenter implements IPresenter {
     private IView mView;
     public Presenter(IView view){
         this.mView = view;

@@ -1,6 +1,6 @@
-package com.lbj.mvp_demo;
+package com.lbj.mvp_demo.model;
 
-public class UserService implements IUserService{
+public class UserService implements IUserService {
 
     @Override
     public String search(int code){

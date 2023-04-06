@@ -1,4 +1,4 @@
-package com.lbj.mvp_demo;
+package com.lbj.mvp_demo.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.lbj.mvp_demo.R;
+import com.lbj.mvp_demo.presenter.IPresenter;
+import com.lbj.mvp_demo.presenter.Presenter;
+import com.lbj.mvp_demo.view.IView;
+
 @SuppressWarnings("all")
-public class MainActivity extends AppCompatActivity implements IView{
+public class MainActivity extends AppCompatActivity implements IView {
 
     private Button btnSubmit;
     private EditText inputText;
