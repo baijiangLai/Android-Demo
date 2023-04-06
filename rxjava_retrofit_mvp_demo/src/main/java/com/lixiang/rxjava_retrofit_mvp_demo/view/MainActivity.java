@@ -1,8 +1,10 @@
-package com.lixiang.rxjava_retrofit_mvp_demo;
+package com.lixiang.rxjava_retrofit_mvp_demo.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.lixiang.rxjava_retrofit_mvp_demo.R;
 
 public class MainActivity extends AppCompatActivity {
 
