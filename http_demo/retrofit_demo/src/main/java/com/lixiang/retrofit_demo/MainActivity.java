@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText carNo;
     private Button btnCarno;
 
-    private static final String CAR_KEY = "c6a9eae6b388b270c8457f91a8613af0";
-    private static final String WEATHER_KEY = "ab5c320aa9cd26fdb671ea607259db7b";
+    private static final String CAR_KEY = "xxx";
+    private static final String WEATHER_KEY = "xxx";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
