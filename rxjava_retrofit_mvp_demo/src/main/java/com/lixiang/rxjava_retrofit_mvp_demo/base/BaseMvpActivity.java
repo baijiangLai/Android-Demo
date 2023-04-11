@@ -8,6 +8,7 @@ package com.lixiang.rxjava_retrofit_mvp_demo.base;
 public abstract class BaseMvpActivity<V extends  BaseView, P extends BasePresenter> extends BaseActivity {
     private P presenter;
 
+    @Override
     protected void initPresenter(){
         presenter = createPresenter();
         if (presenter != null){

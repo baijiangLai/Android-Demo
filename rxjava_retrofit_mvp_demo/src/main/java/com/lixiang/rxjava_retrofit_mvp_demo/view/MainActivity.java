@@ -21,10 +21,10 @@ public class MainActivity extends BaseMvpActivity<MainActivity, PoetryPresenter>
     Button btnGetPoetry;
     @BindView(R.id.tv_poetry_author)
     TextView tvPoetryAuthor;
-    @BindView(R.id.btn_goto_fragment)
-    Button btnGotoFragment;
-    @BindView(R.id.ll)
-    LinearLayout ll;
+//    @BindView(R.id.btn_goto_fragment)
+//    Button btnGotoFragment;
+//    @BindView(R.id.ll)
+//    LinearLayout ll;
 
     @Override
     protected void initViews() {
@@ -61,14 +61,11 @@ public class MainActivity extends BaseMvpActivity<MainActivity, PoetryPresenter>
         Toast.makeText(MyApplication.getContext(), result, Toast.LENGTH_SHORT).show();
     }
 
-    @OnClick({R.id.btn_get_poetry, R.id.btn_goto_fragment})
+    @OnClick({R.id.btn_get_poetry})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_get_poetry:
                 getPresenter().getPoetry();
-                break;
-            case R.id.btn_goto_fragment:
-                startFragment(R.id.ll, new MainFragment());
                 break;
             default:
                 break;

@@ -15,3 +15,9 @@
 3.27: MVP架构
 
 3.27: adapter使用
+
+3.30: retrofit基本使用
+
+4.4：rxjava基本使用
+
+4.11: rxjava+Retrofit+MVP的综合使用

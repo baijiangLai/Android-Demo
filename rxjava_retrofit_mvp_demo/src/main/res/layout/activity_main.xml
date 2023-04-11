@@ -30,18 +30,18 @@
         android:text="默认作者"
         android:textSize="35dp" />
 
-    <Button
-        android:id="@+id/btn_goto_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="跳转到fragment"
-        android:textColor="@color/cardview_dark_background"
-        android:textSize="15dp" />
-    <LinearLayout
-        android:id="@+id/ll"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+<!--    <Button-->
+<!--        android:id="@+id/btn_goto_fragment"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:text="跳转到fragment"-->
+<!--        android:textColor="@color/cardview_dark_background"-->
+<!--        android:textSize="15dp" />-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
 
 </LinearLayout>
