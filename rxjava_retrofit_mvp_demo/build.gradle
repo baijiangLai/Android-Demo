@@ -49,4 +49,5 @@ dependencies {
     //引入ButterKnife
     implementation "com.jakewharton:butterknife:10.2.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.2.0"
 }

@@ -15,6 +15,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
+ * fragment基类
  * @author laibaijiang
  * @date 2023/4/7
  */
@@ -103,10 +104,10 @@ public abstract class BaseFragment<T extends BasePresenter> extends Fragment imp
     /**
      * 跳转Fragment
      *
-     * @param fragment 跳转去的fragment
+     * @param toFragment 跳转去的fragment
      */
-    public void startFragment(Fragment fragment) {
-        startFragment(fragment, null);
+    public void startFragment(Fragment toFragment) {
+        startFragment(toFragment, null);
     }
 
     /**
