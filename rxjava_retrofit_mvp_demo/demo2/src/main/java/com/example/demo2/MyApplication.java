@@ -1,8 +1,12 @@
-package com.example.demo2.base;
+package com.example.demo2;
 
 import android.app.Application;
 import android.content.Context;
 
+/**
+ * @author laibaijiang
+ * @date 2023/4/12
+ */
 public class MyApplication extends Application {
     private static Context context;
 
@@ -12,7 +16,7 @@ public class MyApplication extends Application {
         context = getApplicationContext();
     }
 
-    public static Context getContext(){
+    public static Context getContext() {
         return context;
     }
 }

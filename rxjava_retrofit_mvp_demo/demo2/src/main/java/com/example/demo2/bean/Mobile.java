@@ -5,7 +5,7 @@ public class Mobile {
     private String reason;
     private Result result;
 
-    class Result {
+    public class Result {
         private String province;
         private String city;
         private String areacode;
