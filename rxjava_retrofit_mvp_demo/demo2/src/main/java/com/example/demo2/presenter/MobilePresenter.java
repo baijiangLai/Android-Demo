@@ -23,6 +23,7 @@ public class MobilePresenter extends IPresenter {
     private static final String TAG = MobilePresenter.class.getSimpleName();
     private Mobile mMobile;
     private IView mIView;
+    private Context mContext = MyApplication.getContext();
 
     public MobilePresenter(IView IView) {
         mIView = IView;
@@ -60,7 +61,7 @@ public class MobilePresenter extends IPresenter {
             @Override
             public void onError(Throwable e) {
                 Log.e(TAG, "onError: " + e.getMessage());
-                Toast.makeText(MyApplication.getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
